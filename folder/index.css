@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial,"Helvetica Neue", Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  
+}
+.logo-text{
+  display: inline-flex;  
+}
+.logo{
+  padding-right: 1rem;
+}
+ul{
+  display: flex;
+  text-transform: capitalize;
+}
+ul li {
+  list-style: none;
+  padding: 0em 2em;
+  color: #007bff;
+  font-size: 1.2em;
+}li a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+main{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/smile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-around;
+  background-color: #001327;
+  height: 100vh;
+  opacity: 0.8;
+}
+.main-text{
+  border: 1px solid red;
+  margin: 3em 0em;
+  text-align: justify;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+}
+.register-page{
+margin: 5em 0em;
+padding: 3em 4em;
+  background-color: #ffffff;
+  color: black;
+}
+input{
+  margin-bottom: 2em;
+  height: 50px;
+  color: black;
+  font-size: 1rem;
+}
+
+.register-page .input-mail{
+  width: 100%;
+}
+.input-name{
+  width: 45%;
+  
+}
+@media only screen and (max-width:800px){
+  nav{
+    display: block;
+  }
+  ul{
+    display: none;
+  }
+  .main-page{
+    display: block;
+    justify-content: center;
+  }
+}
